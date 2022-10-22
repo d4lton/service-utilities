@@ -1,6 +1,6 @@
 {
   "name": "@d4lton/service-utilities",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Common NodeJS Service Utilities",
   "main": "dist/index.js",
   "scripts": {
@@ -32,8 +32,8 @@
     "typescript": "4.8.4"
   },
   "commit": {
-    "hash": "0bced75f6dfa73f677a347222c88a81a29fed764",
-    "time": "Sat Oct 22 08:25:05 2022 -0400"
+    "hash": "a018d52575c4b836668f444bcdeca15cbac4bdf4",
+    "time": "Sat Oct 22 08:38:53 2022 -0400"
   },
   "repository": "git://github.com/d4lton/service-utilities.git",
   "publishConfig": {
