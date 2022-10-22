@@ -4,8 +4,8 @@
   "description": "Common NodeJS Service Utilities",
   "main": "dist/index.js",
   "scripts": {
-    "test": "npx mocha -r ts-node/register 'src/test/**/*.ts' --exit",
-    "start": "npx mocha --watch -r ts-node/register 'src/test/**/*.ts' --watch-files 'src/**/*.ts'",
+    "test": "npx mocha -r ts-node/register 'tests/**/*.ts' --exit",
+    "start": "npx mocha --watch -r ts-node/register 'tests/**/*.ts' --watch-files 'src/**/*.ts'",
     "prepack": "rm -f $npm_package_name-*.tgz && tsc",
     "patch": "npm --no-git-tag-version version patch",
     "postversion": "pkghash && git add package.json && git commit -m \"$npm_package_name $npm_package_version\" && git push",
@@ -15,22 +15,21 @@
   "author": "Dana Basken <dbasken@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "@d4lton/pkghash": "^1.0.7",
-    "@d4lton/utilities": "^1.0.1",
-    "@types/chai": "^4.2.22",
-    "@types/expect": "^24.3.0",
-    "@types/mocha": "^8.2.3",
-    "@types/node": "^16.11.9",
-    "@types/redis": "^2.8.32",
-    "knex": "^0.21.21",
-    "objection": "^2.2.17",
-    "log4js": "^6.4.0",
-    "chai": "^4.3.4",
-    "mocha": "^8.3.2",
-    "redis": "^3.1.2",
-    "ts-mocha": "^8.0.0",
-    "ts-node": "^10.4.0",
-    "typescript": "^4.5.2"
+    "@d4lton/pkghash": "1.0.7",
+    "@d4lton/utilities": "1.0.17",
+    "@types/chai": "4.3.3",
+    "@types/expect": "24.3.0",
+    "@types/mocha": "10.0.0",
+    "@types/node": "18.11.3",
+    "@types/redis": "2.8.32",
+    "knex": "0.21.21",
+    "log4js": "6.7.0",
+    "chai": "4.3.6",
+    "mocha": "10.1.0",
+    "redis": "3.1.2",
+    "ts-mocha": "10.0.0",
+    "ts-node": "10.9.1",
+    "typescript": "4.8.4"
   },
   "commit": {
     "hash": "0bced75f6dfa73f677a347222c88a81a29fed764",
@@ -40,5 +39,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
-  "dependencies": {}
+  "dependencies": {
+    "objection": "2.2.18"
+  }
 }

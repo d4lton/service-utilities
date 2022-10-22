@@ -3,7 +3,7 @@
  */
 
 import {assert} from "chai";
-import {synchronized} from "../../decorators/synchronized";
+import {synchronized} from "../../src/decorators/synchronized";
 import {Utilities} from "@d4lton/utilities";
 
 describe("synchronized", function() {

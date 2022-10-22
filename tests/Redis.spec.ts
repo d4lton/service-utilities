@@ -3,7 +3,7 @@
  */
 
 import {assert} from "chai";
-import {Redis} from "../Redis";
+import {Redis} from "../src/Redis";
 
 describe("Redis", function() {
 
